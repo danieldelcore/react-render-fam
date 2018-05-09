@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Omits the content if predicate is false 1`] = `""`;
+
+exports[`Omits the content if predicate not supplied 1`] = `""`;
+
+exports[`Renders the content if predicate is true 1`] = `
+<p>
+  Hello!
+</p>
+`;
+
+exports[`Renders the content if predicate supplied as a boolean attribute 1`] = `
+<p>
+  Hello!
+</p>
+`;
