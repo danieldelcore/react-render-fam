@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders all items if predicates are omitted 1`] = `
+Array [
+  <p>
+    0
+  </p>,
+  <p>
+    1
+  </p>,
+  <p>
+    5
+  </p>,
+]
+`;
+
+exports[`Renders the content if all predicates are true 1`] = `
+Array [
+  <p>
+    6
+  </p>,
+  <p>
+    99
+  </p>,
+]
+`;
+
+exports[`Renders the content if predicate is true 1`] = `
+Array [
+  <p>
+    6
+  </p>,
+  <p>
+    2000
+  </p>,
+]
+`;
