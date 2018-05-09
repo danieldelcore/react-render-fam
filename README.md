@@ -70,3 +70,57 @@ const lessThanOneHundred = ({ value }) => value < 100;
 />
 
 ```
+
+### `<Sort>`
+
+Sorts the elements in the order specified by the supplied comparison function. Internally uses [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) to determine the correct order of elements.
+
+Defaults to ascending order if `compare` or `descending` props are omitted.
+
+**Props:**
+
+- `by` The key which is evaluated when comparing values
+- `compare` A user supplied comparison function. For more information on using `compare` please see: [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- `descending` When supplied orders the elements in defending order (Assuming the comparison value is an `integer` or `string`)
+- `values` An array of objects to be compared and rendered
+- `render` A function used to render each sorted element  
+
+**Example:** Renders the list of names in alphabetical order
+
+```jsx
+import { Sort } from 'react-render-fam';
+
+const data = [
+    { name: 'Edward', id: 1 },
+    { name: 'Sharpe', id: 2 },
+    { name: 'And', id: 3 },
+    { name: 'The', id: 4 },
+    { name: 'Magnetic', id: 5 },
+    { name: 'Zeros', id: 6 },
+];
+
+const compare = (by, a, b) => {
+    const nameA = a[by].toUpperCase();
+    const nameB = b[by].toUpperCase();
+
+    if (nameA < nameB) {
+        return -1;
+    }
+
+    if (nameA > nameB) {
+        return 1;
+    }
+
+    return 0;
+};
+
+<Sort
+    values={data}
+    by="name"
+    compare={compare}
+    render={({ id, name }) => (
+        <p key={id}>{name}</p>
+    )}
+/>
+
+```

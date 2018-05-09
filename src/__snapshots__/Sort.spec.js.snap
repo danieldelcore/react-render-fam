@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the content in ascending order 1`] = `
+Array [
+  <p>
+    -10
+  </p>,
+  <p>
+    0
+  </p>,
+  <p>
+    1
+  </p>,
+  <p>
+    6
+  </p>,
+  <p>
+    2000
+  </p>,
+]
+`;
+
+exports[`Renders the content in ascending order if all comparison options are omitted 1`] = `
+Array [
+  <p>
+    -10
+  </p>,
+  <p>
+    0
+  </p>,
+  <p>
+    1
+  </p>,
+  <p>
+    6
+  </p>,
+  <p>
+    2000
+  </p>,
+]
+`;
+
+exports[`Renders the content in descending order 1`] = `
+Array [
+  <p>
+    2000
+  </p>,
+  <p>
+    6
+  </p>,
+  <p>
+    1
+  </p>,
+  <p>
+    0
+  </p>,
+  <p>
+    -10
+  </p>,
+]
+`;
+
+exports[`Renders the content in the order specified by the supplied compare function 1`] = `
+Array [
+  <p>
+    And
+  </p>,
+  <p>
+    Edward
+  </p>,
+  <p>
+    Magnetic
+  </p>,
+  <p>
+    Sharpe
+  </p>,
+  <p>
+    The
+  </p>,
+  <p>
+    Zeros
+  </p>,
+]
+`;

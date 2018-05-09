@@ -18,3 +18,13 @@ interface OmitProps {
 }
 
 export class Omit extends Component<OmitProps> {}
+
+interface SortProps {
+    by: string;
+    compare?: Function;
+    descending?: boolean;
+    render?: RenderProp;
+    values?: Array<Object>;
+}
+
+export class Sort extends Component<SortProps> {}
