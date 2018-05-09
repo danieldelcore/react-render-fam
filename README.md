@@ -1,5 +1,11 @@
 # react-render-fam
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md#pull-requests)
+
+A family of 🔥 components to make conditional rendering in React kool again.
+
+![preview](static/preview.png)
+
 ## Installation
 
 **npm:** `$ npm install --save react-render-fam`
@@ -124,3 +130,7 @@ const compare = (by, a, b) => {
 />
 
 ```
+
+## License
+
+MIT © [Daniel Del Core](https://github.com/danieldelcore)
