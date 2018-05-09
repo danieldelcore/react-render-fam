@@ -1,0 +1,25 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+        "jest"
+    ],
+    "env": {
+        "jest/globals": true
+    },
+    rules: {
+        "comma-dangle": ["error", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+            "functions": "never"
+        }],
+        "indent": [1, 4],
+        "function-paren-newline": [0],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-indent": [1, 4],
+        "react/jsx-indent-props": [1, 4],
+        "react/require-default-props": [0]
+    }
+}
