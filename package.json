@@ -1,6 +1,6 @@
 {
   "name": "react-render-fam",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Lit components for conditional rendering, Fam",
   "author": "Daniel Del Core",
   "repository": "github:danieldelcore/react-render-fam",
@@ -11,7 +11,7 @@
     "test:watch": "jest --watch",
     "lint": "eslint index.js src",
     "preversion": "yarn lint && yarn test",
-    "version": "yarn build && git add -A dist",
+    "version": "yarn build",
     "postversion": "git push && git push --tags"
   },
   "main": "./dist/index.js",
