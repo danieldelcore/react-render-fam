@@ -1,6 +1,6 @@
 {
   "name": "react-render-fam",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lit components for conditional rendering, Fam",
   "author": "Daniel Del Core",
   "repository": "github:danieldelcore/react-render-fam",
