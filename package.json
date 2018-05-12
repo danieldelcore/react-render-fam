@@ -7,10 +7,11 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "yarn lint",
-    "build": "babel index.js -d dist",
+    "build": "webpack",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint index.js src"
+    "lint": "eslint index.js src",
+    "prepublishOnly": "yarn build"
   },
   "main": "./dist/index.js",
   "typings": "./index.d.ts",
@@ -38,6 +39,7 @@
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^22.4.3",
+    "babel-loader": "^7.1.4",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
@@ -51,7 +53,9 @@
     "jest": "^22.4.3",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-test-renderer": "^16.3.2"
+    "react-test-renderer": "^16.3.2",
+    "webpack": "^4.8.2",
+    "webpack-cli": "^2.1.3"
   },
   "peerDependencies": {
     "react": ">=16"
