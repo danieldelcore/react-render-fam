@@ -19,4 +19,5 @@ module.exports = {
         }],
     },
     externals: ['react'],
+    devtool: 'source-map',
 };
